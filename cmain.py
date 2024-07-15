@@ -26,7 +26,7 @@ def cWin(xbro, ybro):
         if sum(ybro[win[0]], ybro[win[1]], ybro[win[2]]) == 3:
             return 0  # O wins
     return -1  # No winner yet
-
+# min max algorithem for computer
 def minimax(board, depth, is_maximizing):
     score = cWin(*board)
     if score == 1:
